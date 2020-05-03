@@ -1,2 +1,3 @@
 # two_cars
-Have You played 2 cars?? 
+Ever played 2 cars??
+It is the buggiest version of that game.
