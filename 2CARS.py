@@ -1,20 +1,45 @@
-#to make the two cars game
+"""
+_______________________________________________________________________
+-----------------------------------------------------------------------
+This is one of the first project of my journey with python.
+It was quite a lot fun to explore, specially when you were new to python.
+I am using past tense;because i chcecked this code after so long.
+-----------------------------------------------------------------------
+So, this is the simplest, buggiest version of 2 cars game.
+Basically, the game is about two cars, where we have to get the circles 
+and ignore the squares.
+I have used 'turtle' module to get the job done.
+(This was the first module I am introdeced to.)
+---------------------
+Playing instructions
+---------------------
+Press S to start
+Control units:
+A & D to control the left car(right left) 
+J & L to control the right car(right left) 
+________________________________________________________________________
+Note: I am still figuring out, wtf is going on with the code.
+However, i am glad that it works :)
+________________________________________________________________________
+"""
 
 import turtle
 import time
 import random
 
+# General variables used
 score = 0
 highscore = 0
 delay = 0.1
 
-# screen
+# Main screen 
 wn = turtle.Screen()
 wn.title("two cars with me")
 wn.bgcolor("grey")
 wn.setup(height=600, width=600)
 wn.tracer(0)
 
+# Cursors in the main screen
 def cursors():
     # cursor
     cone = turtle.Turtle()
@@ -57,6 +82,8 @@ def cursors():
     cfive.pendown()
     cfive.goto(290, 290)
 
+# Well, it is horrible, isn't it??
+# i din't knew about DRY.
 
 cursors()
 # cars
@@ -439,7 +466,7 @@ while True:
 
     time.sleep(0.04)
 
-
-wn.mainloop()
+if __name__ == "__main__":
+    wn.mainloop()
 
 
